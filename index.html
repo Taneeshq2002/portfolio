@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taneeshq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico?v=2">
+<body>
+    <div class="text1">
+      <!--testing changes-->
+    <img class="cloud1 cloud1-1" src="cloud.png" height=70px alt="">
+    <h1 class="intro">I am Taneeshq</h1>
+    <h2 class="intro">Programmer</h2>
+    <img class="cloud2"src="cloud.png"height=70px alt="">
+    
+  <span> <img class="mountain"src="mountain.png" alt=""></span> 
+  <img class=" sun" id="switching-img"src="sun1.jpeg" alt=""height=150px>
+ 
+    </div>
+   <div class="middle-container">
+  <div class="profile">
+    <div class="profile-pic" style=" height:250px; width:250px; margin:auto 43%;">
+    <img class="itachi"src="portfolio_pic.jpg" height="250px" width="250px"  alt="profile-pic">
+  </div>
+    <h2>Hello.</h2>
+    <p class="p2">
+      My name is Taneeshq and this is my website
+    </p>
+   
+  </div>
+ <hr>
+  <div class="skills">
+    <h2 id="skills">My Skills.</h2>
+    <div class="skill-row">
+      <img class="code-img" src="htmltag.jpeg" alt="monke">
+      <p class=" black-to-white">I develop websites using html and css</p>
+     <div class="description  black-to-white"> <p>I started learning to code when i was 17 years old because i wanted to know how  the things 
+        actually work in technical point of view.
+      </p>
+    </div>
+    </div>
+    <div class="skill-row">
+      <img class="comm-img" src="communication.jpeg" alt="">
+      <p id=" black-to-white">I love talking to new poeple</p>
+      <p id="comm" class=" black-to-white">Communication is the key.one can compensate for his or her skills with communication so i try 
+        to improve my communication skills everyday.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <h2 id="gettouch">Get In Touch</h2>
+    <p>To contact me use any of these options</p>
+    <div class="contact-op">
+      <div class="options"><a href="https://www.linkedin.com/in/taneeshq-cholekar-a0b342255/"><img src="linkedin.jpeg" alt="linkedin" width="151px"height="100px"></a></div>
+      <div class="options instagram"><a href="https://www.instagram.com/taneeshq/?next=%2F"><img src="insta.jpeg" alt="linkedin" width="100px"height="100px"></a></div>
+      <div class="options facebook"><a href=""><img src="fb.jpeg" alt="linkedin" width="100px"height="100px"></a></div>
+    </div>
+    <div class="btn1">
+    <a class="btn btn1" href="mailto:taneeshq1809@gmail.com">CONTACT ME</a>
+  </div>
+  </div>
+</div>
+
+
+<div class="bottom-container">
+
+  <h3 class="copyright">© Taneeshq Cholekar</h3>
+</div>
+<script>
+  document.querySelector(".sun").addEventListener("click",function(){
+    document.querySelector(".sun").src="moon.jpeg";
+    document.querySelector(".text1").style.backgroundColor="black";
+    document.querySelector("body").style.backgroundColor="black";
+   document.querySelector(".middle-container").style.color="white";
+   document.getElementById("switching-img").className="moon";
+  });
+ 
+  
+</script>
+    
+</body>
+</html>
