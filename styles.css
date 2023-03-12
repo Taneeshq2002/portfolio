@@ -103,7 +103,7 @@ a{
 
 .sun{
     position:absolute;
-    right:150px;
+    right:100px;
     top:400px;
     background-color: cornflowerblue;
     opacity:0.8;
@@ -115,7 +115,7 @@ a{
 }
 .moon{
     position:absolute;
-    right:200px;
+    right:100px;
     top:400px;
     background-color: cornflowerblue;
     opacity:0.8;
