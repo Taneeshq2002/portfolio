@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico?v=2" />
   <body>
-    <div class="text1">
+    <div class="text1" id="text1">
       <!--testing changes-->
       <!--adding comment-->
       <img class="cloud1 cloud1-1" src="cloud.png" height="70px" alt="" />
@@ -25,7 +25,7 @@
 
       <span> <img class="mountain" src="mountain.png" alt="" /></span>
       <!--img class=" sun" id="switching-img"src="sun1.jpeg" alt=""height=150px-->
-      <div class="sun" id="switching-img">
+      <div class="sun" id="sun">
         <div style="margin-top: 1.7rem">Click me for <br />dark mode</div>
       </div>
     </div>
@@ -112,11 +112,17 @@
     </div>
     <script>
       document.querySelector(".sun").addEventListener("click", function () {
-        document.querySelector(".sun").src = "moon.jpeg";
-        document.querySelector(".text1").style.backgroundColor = "black";
-        document.querySelector("body").style.backgroundColor = "black";
-        document.querySelector(".middle-container").style.color = "white";
-        document.getElementById("switching-img").className = "moon";
+        document.getElementById("sun").classList.toggle("moon");
+        document.querySelector(".text1").classList.toggle("text1dark");
+        document.querySelector("body").classList.toggle("text1dark");
+        document
+          .querySelector(".middle-container")
+          .classList.toggle("middle-containerwhite");
+        // document.querySelector(".copyright").classList.toggle("text1dark");
+        document
+          .querySelector(".bottom-container")
+          .classList.toggle("text1dark");
+        // document.getElementById("sun").className = "moon";
       });
     </script>
   </body>
