@@ -8,19 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo&family=Abel&family=Anton&family=Handlee&family=Lobster&family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
   </head>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico?v=2" />
   <body>
+    <!--animation on entry-->
     <div class="text1" id="text1">
       <!--testing changes-->
       <!--adding comment-->
       <img class="cloud1 cloud1-1" src="cloud.png" height="70px" alt="" />
-      <h1 class="intro">I am Taneeshq</h1>
-      <h2 class="intro">Programmer</h2>
+      <h1 class="intro">Hey There.Welcome to</h1>
+      <h1 class="intro" style="margin-top: 7rem">my portfolio</h1>
       <img class="cloud2" src="cloud.png" height="70px" alt="" />
 
       <span> <img class="mountain" src="mountain.png" alt="" /></span>
@@ -29,6 +30,20 @@
         <div style="margin-top: 1.7rem">Click me for <br />dark mode</div>
       </div>
     </div>
+    <div class="scroll-alert">
+      <img
+        class="down-arrow"
+        src="darrow.png"
+        alt="donwward arrow"
+        height="200px;"
+      />
+      <h2 class="skills">Scroll down to get to know more about me.</h2>
+    </div>
+    <!--Introduction-->
+    <p class="introduction" id="introduction" onscroll="introanim();">
+      Let me introduce myself,
+    </p>
+
     <div class="middle-container">
       <div class="profile">
         <div
@@ -124,6 +139,12 @@
           .classList.toggle("text1dark");
         // document.getElementById("sun").className = "moon";
       });
+
+      function introanim() {
+        document
+          .getElementsById("introduction")
+          .classList.add("introductionanim");
+      }
     </script>
   </body>
 </html>

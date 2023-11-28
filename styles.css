@@ -11,7 +11,7 @@
   padding-top: 100px;
   display: block;
   position: relative;
-  height: 800px;
+  height: 750px;
 }
 .text1dark {
   background-color: black;
@@ -31,18 +31,118 @@
   font-size: xx-large;
   font-family: "Dancing Script", cursive;
 }
+
+.cloud2 {
+  position: relative;
+  left: 200px;
+  bottom: 250px;
+  animation: cloud1anim 10s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.sun {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  background-color: cornflowerblue;
+  border-color: black;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(230, 230, 12);
+  box-shadow: 0px 0px 10px 20px rgb(204, 204, 42);
+  border-radius: 50%;
+}
+.moon {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  background-color: cornflowerblue;
+  content: "click for light mode";
+  height: 100px;
+  width: 100px;
+  background-color: rgb(158, 158, 155);
+  box-shadow: 0px 0px 10px 20px rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.cloud1 {
+  position: relative;
+  right: 100px;
+  top: 10px;
+  animation: cloud1anim 10s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+@keyframes cloud1anim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+.mountain {
+  position: static;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.scroll-alert {
+  height: 10rem;
+  margin-top: 3rem;
+  font-family: "Dancing Script", cursive;
+}
+.down-arrow {
+  animation: arrowanim 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes arrowanim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.introduction {
+  font-size: 5rem;
+  width: 50%;
+  margin-top: 15rem;
+  margin-right: 80%;
+  font-family: "Abril Fatface", serif;
+}
+.introductionanim {
+  animation: introIn 1s;
+}
+@keyframes introIn {
+  from {
+    opacity: 0;
+    /* transform: translateY(3rem); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateY(0rem); */
+  }
+}
+.middle-container {
+  margin-top: 4rem;
+}
+.middle-containerwhite {
+  color: white;
+}
 .skills {
   font-size: xx-large;
   font-family: "Dancing Script", cursive;
+  color: black;
 }
 .skill-row {
   font-size: xx-large;
   font-family: "Dancing Script", cursive;
-}
-.middle-container {
-}
-.middle-containerwhite {
-  color: white;
 }
 .bottom-container {
   margin-top: 100px;
@@ -93,61 +193,7 @@ a {
   width: 200px;
   margin-left: 200px;
 }
-.cloud2 {
-  position: relative;
-  left: 200px;
-  bottom: 250px;
-  animation: cloud1anim 10s infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
 
-.sun {
-  position: absolute;
-  right: 100px;
-  top: 400px;
-  background-color: cornflowerblue;
-
-  height: 100px;
-  width: 100px;
-  background-color: rgb(230, 230, 12);
-  box-shadow: 0px 0px 10px 20px rgb(223, 223, 14);
-  border-radius: 50%;
-}
-.moon {
-  position: absolute;
-  right: 100px;
-  top: 400px;
-  background-color: cornflowerblue;
-  content: "click for light mode";
-  height: 100px;
-  width: 100px;
-  background-color: rgb(158, 158, 155);
-  box-shadow: 0px 0px 10px 20px rgb(255, 255, 255);
-  border-radius: 50%;
-}
-
-.cloud1 {
-  position: relative;
-  right: 100px;
-  top: 10px;
-  animation: cloud1anim 10s infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-@keyframes cloud1anim {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
-}
-.mountain {
-  position: static;
-  margin: 0;
-  margin-top: 65px;
-}
 .skill-row {
   width: 50%;
   margin: auto;
