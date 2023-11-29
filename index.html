@@ -30,22 +30,14 @@
         <div style="margin-top: 1.7rem">Click me for <br />dark mode</div>
       </div>
     </div>
-    <div class="scroll-alert">
-      <img
-        class="down-arrow"
-        src="darrow.png"
-        alt="donwward arrow"
-        height="200px;"
-      />
-      <h2 class="skills">Scroll down to get to know more about me.</h2>
-    </div>
+
     <!--Introduction-->
     <p class="introduction" id="introduction" onscroll="introanim();">
       Let me introduce myself,
     </p>
 
     <div class="middle-container">
-      <div class="profile">
+      <div class="profile box">
         <div
           class="profile-pic"
           style="height: 250px; width: 250px; margin: auto 43%"
@@ -58,31 +50,53 @@
             alt="profile-pic"
           />
         </div>
-        <h2>Hello.</h2>
-        <p class="p2">My name is Taneeshq and this is my website</p>
+        <div class="basic">
+          <p
+            class="basic-details text-light"
+            style="font-size: 5rem; margin-left: 3rem"
+          >
+            Hello.
+          </p>
+          <p class="basic-details" style="margin-top: -3rem">
+            My name is Taneeshq<br />Birth Date:18th September 2002<br />Age:21
+          </p>
+        </div>
       </div>
-      <hr />
-      <div class="skills">
-        <h2 id="skills">My Skills.</h2>
-        <div class="skill-row">
-          <img class="code-img" src="htmltag.jpeg" alt="monke" />
-          <p class="black-to-white">I develop websites using html and css</p>
-          <div class="description black-to-white">
-            <p>
-              I started learning to code when i was 17 years old because i
-              wanted to know how the things actually work in technical point of
-              view.
+
+      <div class="education">
+        <div class="box">
+          <p class="basic-details">
+            School:St.Pauls High School<br />Pre-University College:GSS<br />Undergraduate
+            college:GIT
+          </p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="skills">
+          <h2 id="skills">My Skills.</h2>
+          <div class="skill-row" id="row-1">
+            <img class="code-img" src="htmltag.jpeg" alt="monke" />
+            <p>I develop websites using html and css</p>
+            <div class="description">
+              <p>
+                I started learning to code when i was 17 years old because i
+                wanted to know how the things actually work in technical point
+                of view.
+              </p>
+            </div>
+          </div>
+          <div class="skill-row" id="row-2">
+            <img class="comm-img" src="communication.jpeg" alt="" />
+            <p class="black-to-white" id=" black-to-white">
+              I love talking to new poeple
+            </p>
+            <p id="comm" class="black-to-white">
+              Communication is the key.one can compensate for his or her skills
+              with communication so i try to improve my communication skills
+              everyday.
             </p>
           </div>
-        </div>
-        <div class="skill-row">
-          <img class="comm-img" src="communication.jpeg" alt="" />
-          <p id=" black-to-white">I love talking to new poeple</p>
-          <p id="comm" class="black-to-white">
-            Communication is the key.one can compensate for his or her skills
-            with communication so i try to improve my communication skills
-            everyday.
-          </p>
         </div>
       </div>
       <hr />
@@ -130,14 +144,19 @@
         document.getElementById("sun").classList.toggle("moon");
         document.querySelector(".text1").classList.toggle("text1dark");
         document.querySelector("body").classList.toggle("text1dark");
+        document.getElementById("introduction").classList.toggle("text-dark");
+        const boxes = document.getElementsByClassName("box");
+        for (let i = 0; i < boxes.length; i++) {
+          boxes[i].classList.toggle("box-dark");
+        }
         document
           .querySelector(".middle-container")
-          .classList.toggle("middle-containerwhite");
-        // document.querySelector(".copyright").classList.toggle("text1dark");
+          .classList.toggle("text-dark");
+        document.querySelector("#row-1").classList.toggle("text-dark");
+        document.querySelector("#row-2").classList.toggle("text-dark");
         document
           .querySelector(".bottom-container")
           .classList.toggle("text1dark");
-        // document.getElementById("sun").className = "moon";
       });
 
       function introanim() {

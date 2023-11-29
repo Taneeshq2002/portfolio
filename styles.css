@@ -16,6 +16,9 @@
 .text1dark {
   background-color: black;
 }
+.text-dark {
+  color: white;
+}
 .text2 {
   position: absolute;
   right: 200px;
@@ -88,31 +91,10 @@
   margin-top: 100px;
 }
 
-.scroll-alert {
-  height: 10rem;
-  margin-top: 3rem;
-  font-family: "Dancing Script", cursive;
-}
-.down-arrow {
-  animation: arrowanim 2s linear infinite;
-  animation-direction: alternate;
-}
-@keyframes arrowanim {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .introduction {
   font-size: 5rem;
   width: 50%;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-right: 80%;
   font-family: "Abril Fatface", serif;
 }
@@ -128,6 +110,34 @@
     opacity: 1;
     /* transform: translateY(0rem); */
   }
+}
+
+.itachi {
+  margin-top: 30px;
+  margin-left: -0%;
+  border-radius: 130px;
+}
+.basic {
+  margin-top: 5rem;
+}
+.basic-details {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.box {
+  box-shadow: 0px 0px 50px black;
+  width: 80%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.8rem;
+  margin-top: 5rem;
+}
+.box-dark {
+  box-shadow: 0px 0px 20px white;
 }
 .middle-container {
   margin-top: 4rem;
@@ -224,9 +234,7 @@ a {
   height: 200px;
   margin-left: 30px;
 }
-.itachi {
-  margin-top: 30px;
-}
+
 hr {
   width: 100px;
   border: 0px;
