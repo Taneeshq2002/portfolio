@@ -145,10 +145,17 @@
 .middle-containerwhite {
   color: white;
 }
+.tech-item {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: -2rem;
+}
 .skills {
   font-size: xx-large;
   font-family: "Dancing Script", cursive;
-  color: black;
+  color: #66bfbf;
+  font-weight: bolder;
 }
 .skill-row {
   font-size: xx-large;
